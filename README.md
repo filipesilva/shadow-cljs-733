@@ -1,0 +1,1 @@
+Repro for https://github.com/thheller/shadow-cljs/issues/777, not 733 as the name says.
