@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:test {:target    :browser-test
+         :test-dir  "public"
+         :ns-regexp "test.*"
+         :devtools  {:autoload  true
+                     :http-port 8021
+                     :http-root "public"}}
+  :test-ci {:target    :karma
+            :output-to "target/test-ci.js"
+            :ns-regexp "test.*"}}}
